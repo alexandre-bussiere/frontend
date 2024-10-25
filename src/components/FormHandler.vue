@@ -43,7 +43,7 @@ export default {
   methods: {
     async addCar() {
       try {
-        const response = await fetch('http://localhost:8181/add', {
+        const response = await fetch('http://backend-app:8181/cars/add', {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json'
@@ -66,7 +66,7 @@ export default {
 
     async deleteCar() {
       try {
-        const response = await fetch(`http://localhost:8181/delete/${this.deletePlate}`, {
+        const response = await fetch(`http://backend-app:8181/delete/${this.deletePlate}`, {
           method: 'DELETE'
         });
 

@@ -26,7 +26,7 @@ export default {
   },
   methods: {
     fetchCars() {
-      fetch('http://localhost:8181/cars')
+      fetch('http://backend-app:8181/cars')
         .then(response => response.json())
         .then(data => {
           console.log('Cars fetched:', data);
